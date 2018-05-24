@@ -28,6 +28,14 @@ $$X \langle Y, Z \rangle - Z \langle X, Y \rangle + Y \langle Z, X \rangle = 2 \
 
 (связность Леви-Чивиты -- это такая связность, что (1) \nabla G = 0 (согласованность с метрикой) (2) Torsion-free condition, т.е. \nabla_{X}{Y} - \nabla_{Y}{X} = [X, Y] (последнее свойство также назявается симметрической связностью, т.к. если $\{ \frac{\partial}{\partial x_{i}}\}$ -- голономный базис, то $[\frac{\partial}{\partial x_{i}}, \frac{\partial}{\partial x_{j}}]=0$)
 
+Берем первое, второе и третье тождества, вычитаем из первого второе и и к результату прибавляем третье.
+ОК, пусть то, что стоит слева, будет $l.h.s.$
+
+$$l.h.s. = \langle \nabla_{X}{Y}, Z \rangle + \langle Y, \nabla_{X}{Z} \rangle - \langle \nabla_{Z}{X}, Y \rangle - \langle X, \nabla_{Z}{Y} \rangle + \langle \nabla_{Y}{Z}, X \rangle + \langle Z, \nabla_{Y}{X} \rangle = \langle [X, Z], Y \rangle + \langle [X, Z], Y \rangle + \langle \nabla_{X}{Y}, Z \rangle + \langle Z, \nabla_{Y}{X} \rangle$$
+Теперь прибавляем и к левой, и к правой части $\langle \nabla_{X}{Y}, Z \rangle$.
+Тогда справа будет стоять
+$$2 \langle \nabla_{X}{Y}, Z \rangle - \langle Z, [X, Y] \rangle + \langle X, [Y, Z] \rangle + \langle Y, [X, Z] \rangle $$
+
 11) Пусть $\Omega$ -- форма кривизны, а $\omega$ -- локальная 1-форма связности.
 
 Я умею доказывать следующее утверждение:
@@ -60,6 +68,8 @@ $(x_{1}, x_{2}, x_{3}, x_{4}) <-> (z_{0}, z_{1}) = (x_{1} + i x_{2}, x_{3} + i x
 
 Можно сказать, что форма кривизны принимает значения в структурной группе расслоения, а т.к. если расслоение вещественное, то его структурная группа с $GL(n)$ редуцируется до $O(n)$, тогда алгебра Ли $\mathcal{o}(n)$ состоит в точности из всех кососимметрических матриц.
 
-Можно еще так
+Можно еще так:
+
+
 
 
